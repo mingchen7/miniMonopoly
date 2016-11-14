@@ -1,0 +1,25 @@
+package com.monopoly.Constants;
+
+/**
+ * Created by matthew on 11/13/2016.
+ */
+public final class Constant {
+    public static final String STANDARD_PACKAGE_CODE = "STANDARD";
+    public static final int NUM_CELLS_ON_MAP_STANDARD = 40;
+    public static final int NUM_ESTATE_LAND_STANDARD = 32;
+    public static final int NUM_EVENT_LAND_STANDARD = 8;
+    public static final int NUM_EVENT_STANDARD = 100;
+    public static final int NUM_ROLLAGAIN_EVENT_STANDARD = 60;
+    public static final int NUM_JAIL_EVENT_STANDARD = 20;
+    public static final int NUM_FINE_EVENT_STANDARD = 20;
+
+    public static final String EXTENDED_PACAKGE_CODE = "EXTENDED";
+    public static final int NUM_CELLS_ON_MAP_EXTENDED = 80;
+    public static final int NUM_ESTATE_LAND_EXTENDED = 60;
+    public static final int NUM_EVENT_LAND_EXTENDED = 20;
+    public static final int NUM_EVENT_EXTENDED = 100;
+    public static final int NUM_ROLLAGAIN_EVENT_EXTENDED = 40;
+    public static final int NUM_JAIL_EVENT_EXTENDED = 30;
+    public static final int NUM_FINE_EVENT_EXTENDED = 30;
+
+}
