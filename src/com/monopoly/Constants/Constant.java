@@ -4,6 +4,8 @@ package com.monopoly.Constants;
  * Created by matthew on 11/13/2016.
  */
 public final class Constant {
+    public static final int DICE_FACE_VALUE = 6;
+
     public static final String STANDARD_PACKAGE_CODE = "STANDARD";
     public static final int NUM_CELLS_ON_MAP_STANDARD = 40;
     public static final int NUM_ESTATE_LAND_STANDARD = 32;

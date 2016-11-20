@@ -11,6 +11,10 @@ import static com.monopoly.Constants.Constant.*;
  */
 public class StandardLandsPackage extends LandsPackage {
 
+    public StandardLandsPackage() {
+        createLands();
+    }
+
     public void createLands() {
         this.lands = new ArrayList<Land>();
 

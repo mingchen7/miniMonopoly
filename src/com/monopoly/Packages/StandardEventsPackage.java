@@ -12,6 +12,7 @@ import static com.monopoly.Constants.Constant.*;
  * Created by matthew on 11/5/2016.
  */
 public class StandardEventsPackage extends EventsPackage {
+
     public StandardEventsPackage() {
         createEvents();
     }
