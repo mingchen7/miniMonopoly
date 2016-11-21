@@ -1,6 +1,8 @@
 package com.monopoly.Players;
 
 import java.util.*;
+
+import com.monopoly.Lands.EstateTypeLand;
 import com.monopoly.Lands.Land;
 import com.monopoly.Observers.Observer;
 import com.monopoly.util.Dice;
@@ -87,5 +89,23 @@ public class Player {
     public void notifyObs() {
 
     }
+
+	public void addLand(EstateTypeLand myLand) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void updateBalance(double d) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void dead() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	
 
 }
