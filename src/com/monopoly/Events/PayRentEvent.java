@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.monopoly.Events;
 
 import com.monopoly.Lands.EstateTypeLand;
@@ -23,3 +24,16 @@ public class PayRentEvent extends Event {
 		}
 	}
 }
+=======
+package com.monopoly.Events;
+
+/**
+ * Created by matthew on 2016/11/5.
+ */
+public class PayRentEvent extends PurchaseEvent {
+    public static void doEvent(Land myLand, Player myPlayer){
+        myPlayer.updateBalance(-myLand.getRent()); //add getRent method in myLand;
+        //negative balance triggers death, how?
+    }
+}
+>>>>>>> 5ffa2f9d5c272ba8b0b0b19828d074cb9c773c95
