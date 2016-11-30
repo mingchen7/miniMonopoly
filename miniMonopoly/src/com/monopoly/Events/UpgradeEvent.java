@@ -30,7 +30,7 @@ public class UpgradeEvent extends Event{
         System.out.print("You chose not to upgrade, see you next time.");
         return;
     }
-    //yes
+    //yes.
     else if(toPurchase == "Yes"){
         myPlayer.updateBalance(-esLand.upgradePrice); //need to add updateBalance method in players
         esLand.Level = esLand.Level + 1;

@@ -66,8 +66,8 @@ public class Player {
     }
     
     // remove a estate land from this user's property
-    public void removeLand(EstateTypeLand  myLand) {
-        System.out.println("removing this land" + myLand.toString());
+    public void removeLand( ) {
+        System.out.println("removing this land");
         this.ownedLands.clear();
         System.out.println("after removed");
     }
