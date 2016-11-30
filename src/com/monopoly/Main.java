@@ -28,6 +28,16 @@ public class Main {
                 players.add(new Player(name));
             }
 
+            // initiate items of willList
+            Observer deathNote = new DeathNotification();
+            Observer landReset = new ResetOwnedLand();
+            Observer removal = new DelFromPlayerList();
+            for(Player myPlayer:players){            
+                myPlayer.attach(deathNote);
+                myPlayer.attach(landReset);
+                myPlayer.attach(removal);
+            }
+
             // main logic
             while (getAlivePlayers(players) > 1) {
                 for (Player player: players) {

@@ -31,6 +31,11 @@ public class Player {
     public boolean alive() {
         return this.isAlive;
     }
+    
+    // set isAlive as false
+    public void goDie(){
+        this.isAlive = false;
+    }
 
     public int rollDice() {
         Dice dice = Dice.getInstance();
@@ -43,6 +48,10 @@ public class Player {
 
     public String getName() {
         return this.name;
+    }
+
+    public ArrayList<Land> getLands(){
+        return this.ownedLands;
     }
 
     public void move(int steps) {
@@ -76,16 +85,32 @@ public class Player {
         System.out.println("Player " + this.name + "has finished.");
     }
 
+    //attach items into this player's willList
     public void attach(Observer obs) {
-
+        this.willList.add(obs);
     }
-
+    
+    //delete items from athis player's willList
     public void detach(Observer obs) {
-
+        this.willList.remove(obs);
     }
 
-    public void notifyObs() {
+    //execute items in will list at the time this player fails
+    public void exeWill() {
+        for(Observer obs:this.willList){
+            //execute a specific item in will list via a common method, execute()
+            obs.execute(this);
+        }
+    }
+    
+    // remove a estate land from this user's property
+    public void removeLand(Land myLand) {
+        this.ownedLands.remove(myLand);        
+    }
 
+    // for Rui's usage
+    public void dead() {
+        exeWill();
     }
 
 }
